@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BynaryShop</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+<section class="login" id="login-container">
+
+<div class="contenedor1">
+
+        <div class="textos">
+        <h1>BynaryShop</h1>
+        <br>
+        <p>"la mejor forma de comprar"</p></div>
+
+<div class="botones">
+    <h1>iniciar sesión</h1>
+    <h1 id="borde">Registrarse</h1>
+</div>
+
+
+<div class="app">
+    <h1>iniciar sesión con:</h1>
+    <br>
+    <div class="log">
+    <div class="login-s"><img src="./imagenes/apple.jpeg" alt=""></div>
+    <div class="login-s"><img src="./imagenes/google.png" alt=""></div>
+    <div class="login-s"><img src="./imagenes/x.png" alt=""></div>
+
+</div>
+</div>
+
+<div class="barra">
+<div class="lateral"></div><h4> o </h4><div class="laterals"></div>   
+</div>
+
+<div class="datos">
+        <input type="text" id="username" placeholder="Usuario">
+        <input type="password" id="password" placeholder="Contraseña">
+    <div class="reco"><div class="che"><input type="checkbox" name="recuerdame" id="checkbox" > recordarme</div></div>    
+        <button onclick="login()">Entrar</button>
+        
+
+
+
+    </div>
+
+</div>
+
+<div class="contendor2">
+
+    
+</div></div>
+</section>
+
+
+
+    <div id="shop-container" style="display: none;">
+
+        <div class="contenedor">
+
+        <div class="parte1">
+     <div class="menu"> <h1 id="Bynary">BynaryShop</h1>
+  
+
+
+<div class="derecha">
+
+    <div class="usuario">
+        
+    </div>
+        <button onclick="logout()">Cerrar Sesión</button> </div>
+       </div>
+     
+        <div id="product-list">
+
+        </div>
+  
+    </div>
+
+
+    <div class="parte2" id="p2">  
+        
+
+
+      
+    
+<div id="cart" >
+            <h3>Carrito</h3>
+
+            <hr>
+            
+           <div class="items"><h2>items:<span id="cart-count">0</span></h2> <h2>Precio</h2></div> 
+            <ul id="cart-items"></ul>
+
+            <button class="comprar">Comprar</button>
+        </div>
+    
+    </div>
+</div>
+
+</div>
+
+</div>
+ 
+  <div id="seller-panel" style="display: none;">
+<div class="parte3" id="p3">
+           
+            <input type="text" id="product-name" placeholder="Nombre">
+            <input type="number" id="product-price" placeholder="Precio">
+            <input type="text" id="product-img" placeholder="URL Imagen">
+            <button onclick="addProduct()" class="button">Añadir</button>
+        </div>
+ 
+
+</div>
+   
+ <div id="admin-panel" style="display: none;"> 
+    <div class="parte4">
+
+            <div class="ueliminar">
+            <h3>Eliminar Usuarios</h3>
+            <div id="user-list"></div></div>
+
+
+            <div class="peliminar" id="peliminar" style="display: none;">
+            <h3></h3>
+            <div id="delete-product-list"></div></div>
+        </div></div> 
+    </div>
+
+   
+</body>
+</html>
